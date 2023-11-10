@@ -14,7 +14,7 @@ class VideoButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-      _CustomIconButton(value: video.likes, iconData: Icons.favorite_border_outlined, iconColor: Colors.red,),
+      _CustomIconButton(value: video.likes, iconData: Icons.favorite, iconColor: Colors.red,),
       _CustomIconButton(value: video.views, iconData: Icons.remove_red_eye_outlined )
       ],
     );
