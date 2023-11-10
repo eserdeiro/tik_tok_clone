@@ -17,12 +17,15 @@ class VideoButtons extends StatelessWidget {
     return Column(
       children: [
       _CustomIconButton(value: video.likes, iconData: Icons.favorite, iconColor: Colors.red,),
+      const SizedBox(height: 10),
       _CustomIconButton(value: video.views, iconData: Icons.remove_red_eye_outlined ),
+      const SizedBox(height: 10),
       SpinPerfect(
         //infinite: false,
         //duration: const Duration(seconds: 1),
         child: const _CustomIconButton(value: 0, iconData: Icons.play_circle_outlined )
-        )
+        ),
+        const SizedBox(height: 10),
       ],
     );
   }
@@ -45,9 +48,7 @@ class _CustomIconButton extends StatelessWidget {
     
     return Column(
       children: [
-          IconButton(onPressed: (){
-
-          }, icon: Icon(iconData, color: color)),
+          IconButton(onPressed: (){}, icon: Icon(iconData, color: color)),
           if(value > 0 )
           Text(HumanFormats.humanReadbleNumber(value.toDouble()))
       ],
