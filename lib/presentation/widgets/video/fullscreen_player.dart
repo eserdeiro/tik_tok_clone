@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tok_tik/presentation/widgets/video/video_background.dart';
 import 'package:video_player/video_player.dart';
 
 class FullScreenPlayer extends StatefulWidget {
@@ -49,22 +50,30 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
           );
         }
 
-        return AspectRatio(
-          aspectRatio: controller.value.aspectRatio,
-          child: Stack(
-            children: [
-              VideoPlayer(controller),
-              //Gradient 
-
-              //Text 
-              Positioned(
-                bottom: 50,
-                left: 20,
-                //widget.caption is this.caption
-                child: _VideoCaption(caption: widget.caption))
-            ],
-          ),
-          );
+        return GestureDetector(
+          //onLongPress: ,
+          onTap: (){
+            controller.value.isPlaying? controller.pause() : controller.play();
+          },
+          child: AspectRatio(
+            aspectRatio: controller.value.aspectRatio,
+            child: Stack(
+              children: [
+                VideoPlayer(controller),
+                //Gradient 
+                VideoBackground(
+                  stops: const [0.8, 1.0]
+                  ),
+                //Text 
+                Positioned(
+                  bottom: 50,
+                  left: 20,
+                  //widget.caption is this.caption
+                  child: _VideoCaption(caption: widget.caption))
+              ],
+            ),
+            ),
+        );
         
       },
     );
