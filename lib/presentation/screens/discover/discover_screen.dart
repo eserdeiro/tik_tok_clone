@@ -9,7 +9,6 @@ class DiscoverScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final discoverProvider = context.watch<DiscoverProvider>();
-
     return Scaffold(
       // ignore: unnecessary_const
       body: discoverProvider.initialLoading
@@ -17,7 +16,7 @@ class DiscoverScreen extends StatelessWidget {
               child: CircularProgressIndicator(
               strokeWidth: 2,
             ))
-          :  VideoScrollableView(videos: discoverProvider.videos),
+          :  VideoScrollableView(videos: discoverProvider.videos)
     );
   }
 }
