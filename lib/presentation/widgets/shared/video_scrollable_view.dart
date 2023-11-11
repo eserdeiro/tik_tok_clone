@@ -20,7 +20,6 @@ import 'package:tok_tik/presentation/widgets/video/fullscreen_player.dart';
       itemCount: videos.length,
       itemBuilder: (context, index){
         final videoPost = videos[index];
-        print("video url ${videoPost.videoUrl}");
 
         return  Stack(
           children: [
