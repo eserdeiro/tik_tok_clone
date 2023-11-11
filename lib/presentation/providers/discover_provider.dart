@@ -9,7 +9,6 @@ bool initialLoading = true;
 List<VideoPost> videos = [ ];
 
 Future<void> loadNextPage() async {
-  print('Esto nunca se imprime ');
 
 await Future.delayed(const Duration(microseconds: 100));
 
@@ -22,7 +21,6 @@ final List<VideoPost> newVideos = videoPosts.map(
 videos.addAll(newVideos);
 initialLoading = false;
 notifyListeners();
-print('Esto tampoco ${videos[0].caption}');
 }
 
  }
