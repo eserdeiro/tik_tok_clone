@@ -2,7 +2,7 @@ import 'package:intl/intl.dart';
 
 class HumanFormats {
 
-  static String humanReadbleNumber (double number ){
+  static String readbleNumber (double number ){
 
     final formatterNumber = NumberFormat.compactCurrency(
       decimalDigits: 0,

@@ -46,12 +46,20 @@ class _CustomIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     
-    return Column(
-      children: [
-          IconButton(onPressed: (){}, icon: Icon(iconData, color: color)),
-          if(value > 0 )
-          Text(HumanFormats.humanReadbleNumber(value.toDouble()))
-      ],
+    return SizedBox(
+      child: Column(
+        children: [
+            IconButton(
+              onPressed: (){}, 
+              icon: Icon(iconData, color: color),
+              iconSize: 30,
+              ),
+            if(value > 0 )
+            Text(
+              HumanFormats.readbleNumber(value.toDouble())
+            )
+        ],
+      ),
     );
   }
 }
