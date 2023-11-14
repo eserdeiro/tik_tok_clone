@@ -27,3 +27,6 @@ Stacks
 video controllers
 
 And more!
+
+
+![Demo 1](https://raw.githubusercontent.com/eserdeiro/tik_tok_clone/main/assets/1.jpeg)
