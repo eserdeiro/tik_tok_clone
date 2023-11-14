@@ -1,16 +1,29 @@
 # tok_tik
 
-A new Flutter project.
+A new Flutter project. Fake tik tok screen 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Here we will see
 
-A few resources to get you started if this is your first Flutter project:
+Asset management
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Packages
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Gesture Detector
+
+Widget Positioning
+
+Mappers
+
+Gradients
+
+Loops
+
+Assertions
+
+Stacks
+
+video controllers
+
+And more!
