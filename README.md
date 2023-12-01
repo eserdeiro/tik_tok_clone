@@ -28,5 +28,6 @@ video controllers
 
 And more!
 
+## Demo
 
-![Demo 1](https://raw.githubusercontent.com/eserdeiro/tik_tok_clone/main/assets/1.jpeg)
+<img src="https://raw.githubusercontent.com/eserdeiro/tik_tok_clone/main/assets/1.jpeg" width="30%">
